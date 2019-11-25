@@ -53,3 +53,5 @@ set spelllang=es
 " Bubble single lines
 nmap <C-Up> ddkp
 nmap <C-Down> ddp
+
+command! Status echo "All system are go!"
