@@ -1,7 +1,3 @@
-
-
-
-
 "
 " Set wrap
 set wrap
