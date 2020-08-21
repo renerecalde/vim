@@ -1,28 +1,8 @@
-
-" Set css plugin
-augroup VimCSS3Syntax
-  autocmd!
-
-  autocmd FileType css setlocal iskeyword+=-
-augroup END
-
-
-" Set texwith
-set textwidth=79
-" wrap
-set wrap
-
-" rnu
-set rnu
-
-" Turn off modelines
-set modelines=0
-
-" Set color
-syntax on
-
-colorscheme industry
-
+" Gundo config
+if has('python3')
+    let g:gundo_prefer_python3 = 1
+endif
+nnoremap <F5> :GundoToggle<CR>
 
 
 " Set shell
@@ -38,12 +18,26 @@ nmap <silent>scp       <Plug>SQLU_CreateProcedure<CR>
 
 
 
-" Gundo config
-if has('python3')
-    let g:gundo_prefer_python3 = 1
-endif
-nnoremap <F5> :GundoToggle<CR>
 
+" Turn off modelines
+set modelines=0
+
+" Set color
+syntax on
+
+
+" Set css plugin
+augroup VimCSS3Syntax
+  autocmd!
+
+  autocmd FileType css setlocal iskeyword+=-
+augroup END
+
+
+" Set texwith
+set textwidth=79
+" wrap
+set wrap
 
 
 " Supertab config
@@ -52,6 +46,7 @@ nnoremap <F5> :GundoToggle<CR>
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 " Tagbar config
+
 
 " Elixir Tagbar Configuración
 let g:tagbar_type_elixir = {
@@ -72,28 +67,14 @@ let g:tagbar_type_elixir = {
     \ ]
     \ }
 
+
 " Tagbar config
 nmap <F8> :TagbarToggle<CR>
+
 
 " Encondig
 set encoding=utf8
 
-" Config NerdThree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-" Config line number
-set number
-
-" Config pathogen
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
-
-
-" config spell
-set spell spelllang=es
-set nospell
 
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
@@ -114,3 +95,60 @@ if has("autocmd")
 endif
 
 autocmd BufEnter * if &filetype == "" | setlocal ft=text | endif
+
+"
+" Set wrap
+set wrap
+" Relative number
+set rnu
+
+
+" Desarrollo asistido por ia
+set rtp+=~/tabnine-vim
+"
+" Configuracíon default
+set number
+
+" Config vim-ariline
+set laststatus=2
+let g:airline_theme='luna'
+
+" Config pathogen
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+
+" Config nerdthree
+autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+
+
+" Config tagbar
+nmap <F8> :TagbarToggle<CR>
+
+
+" Config ctags
+let g:Tlst_Ctags_Cmd='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
+
+
+" Config theme
+colorscheme base16-default-dark
+" colorscheme blackboard 
+" colorscheme desert 
+set termguicolors
+
+
+" Config taglist
+nmap <F7> :TlistToggle<CR>
+
+" Config spell
+set spell
+setlocal spell spelllang=es
+set nospell
+
+" Config rst
+" set shell /bin/sh
+

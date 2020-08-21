@@ -1,0 +1,1445 @@
+# Vim 8.0 generó este archivo "viminfo".
+# Puede editarlo, ¡sólo si tiene cuidado!
+
+# Viminfo version
+|1,4
+
+# Valor de 'encoding' cuando se escribió este archivo
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Último Patrón de búsqueda:
+~MSle0~/empresa_migration
+
+# Último SustituciónPatrón de búsqueda:
+~MSle0&empresa_migration
+
+# Última cadena de sustitución:
+$empresa
+
+# Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
+:q
+|2,0,1574335641,,"q"
+:h sql.txt
+|2,0,1574335316,,"h sql.txt"
+:h sql-txt
+|2,0,1574335307,,"h sql-txt"
+:SQLSetType
+|2,0,1574335245,,"SQLSetType"
+:SQLSetType mysql
+|2,0,1574335008,,"SQLSetType mysql"
+:'<,'>SQLUFormetter
+|2,0,1574334675,,"'<,'>SQLUFormetter"
+:w!
+|2,0,1574334585,,"w!"
+:set number!
+|2,0,1574351633,,"set number!"
+:w
+|2,0,1574351506,,"w"
+:w1
+|2,0,1574349361,,"w1"
+:k
+|2,0,1574337423,,"k"
+:sql-completion
+|2,0,1574337285,,"sql-completion"
+:h sql
+|2,0,1574337261,,"h sql"
+:sqlcompletion
+|2,0,1574337257,,"sqlcompletion"
+:h sql-completion
+|2,0,1574334895,,"h sql-completion"
+:W!
+|2,0,1574256280,,"W!"
+:set number
+|2,0,1574254290,,"set number"
+:%s/\^M/ /g
+|2,0,1574175308,,"%s/\\^M/ /g"
+:%s/\n\n/^M/gc
+|2,0,1574175247,,"%s/\\n\\n/^M/gc"
+:%s/\//g
+|2,0,1574175185,,"%s/\\//g"
+:%s///g
+|2,0,1574175167,,"%s///g"
+:%s///gg
+|2,0,1574175095,,"%s///gg"
+:%s/
+|2,0,1574174825,,"%s/"
+:%s/^M//g
+|2,0,1574174808,,"%s/^M//g"
+:h color
+|2,0,1574172178,,"h color"
+::q:highlight Normal ctermfg=grey ctermbg=darkblue
+|2,0,1574171460,,":q:highlight Normal ctermfg=grey ctermbg=darkblue"
+::highlight Normal ctermfg=grey ctermbg=autumn
+|2,0,1574171444,,":highlight Normal ctermfg=grey ctermbg=autumn"
+:highlight Normal ctermfg=grey ctermbg=darkblue
+|2,0,1574171419,,"highlight Normal ctermfg=grey ctermbg=darkblue"
+:set background= light
+|2,0,1574171399,,"set background= light"
+:set background=light
+|2,0,1574171357,,"set background=light"
+:write
+|2,0,1574171343,,"write"
+:text
+|2,0,1574171291,,"text"
+:colorscheme autumn
+|2,0,1574171114,,"colorscheme autumn"
+:colorscheme desert
+|2,0,1574171004,,"colorscheme desert"
+:set spell
+|2,0,1574160019,,"set spell"
+:set columns=80
+|2,0,1574160004,,"set columns=80"
+:set nospell
+|2,0,1574159945,,"set nospell"
+:set spell!
+|2,0,1574159631,,"set spell!"
+:set spelllang=es
+|2,0,1573641135,,"set spelllang=es"
+:help par
+|2,0,1573554199,,"help par"
+:.,$!par -w40
+|2,0,1573553893,,".,$!par -w40"
+:set formatprg=par\ -w40
+|2,0,1573553856,,"set formatprg=par\\ -w40"
+:.,.+3!par
+|2,0,1573553672,,".,.+3!par"
+:set formatprg=par
+|2,0,1573553668,,"set formatprg=par"
+:.,.+1!par
+|2,0,1573553603,,".,.+1!par"
+:q!
+|2,0,1573217726,,"q!"
+:.,.+1!
+|2,0,1573216457,,".,.+1!"
+:tabnew
+|2,0,1572354786,,"tabnew"
+:w"
+|2,0,1572018778,,"w\""
+:%s/\^M//g
+|2,0,1571931925,,"%s/\\^M//g"
+
+# Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+?/*
+|2,1,1574352220,47,"*"
+? \^M
+|2,1,1574175308,,"\\^M"
+? \n\n
+|2,1,1574175247,,"\\n\\n"
+? \
+|2,1,1574175185,,"\\"
+? 
+|2,1,1574175167,,""
+? ^M
+|2,1,1574174808,,"^M"
+?/menu
+|2,1,1573641234,47,"menu"
+? \<nameserver\>
+|2,1,1573217691,,"\\<nameserver\\>"
+?/phpmyadmin
+|2,1,1573216598,47,"phpmyadmin"
+?/actividad
+|2,1,1572354720,47,"actividad"
+?/sql
+|2,1,1572354684,47,"sql"
+? empresa_migration
+|2,1,1568985894,,"empresa_migration"
+? empresa_migracion
+|2,1,1568985873,,"empresa_migracion"
+
+# Historia de Expresión (de lo más nuevo a lo más antiguo):
+
+# Historia de Línea de entrada (de lo más nuevo a lo más antiguo):
+
+# Historia de Debug Line (de lo más nuevo a lo más antiguo):
+
+# Registros:
+"0	CHAR	0
+	-- Consulta de cooperativas
+	
+	USE mprod_cooperati;
+	
+	-- Listado de cooperativas sólo de crédito
+	
+	SELECT 
+	/*--Datos de actividad*/
+	  actividad.a_descripcion,
+	/*--Datos de cooperativa*/
+	  coop.co_matricula AS matriculaProvincial,
+	  coop.co_mat_nac AS matriculaNacional,
+	  coop.co_nombre AS nombre,
+	  coop.co_cuit AS cuit,
+	  coop.co_ingresosBrutos AS ingresosBrutos,
+	  coop.co_domi AS domicilio,
+	  coop.co_email AS email,
+	  coop.co_tel AS telefono,
+	  localidad.l_nom_dpto AS departamento,
+	  localidad.l_nom_loc AS localidad,
+	/*--Datos del documento*/
+	  documento.md_ejercicio AS ejercicio,
+	/*--Datos del balance  */
+	  balance.b_id AS identificador, 
+	  balance.b_certif AS "Certificado(1 si)",
+	  balance.b_regul AS "Regular(1 si)",
+	  balance.b_resul AS "Estado de resultado(1 si)",
+	  balance.b_anexo AS "Cuadros anexos(1 si)",
+	  balance.b_sindi AS "Informe del Síndico(1 si)",
+	  balance.b_audi AS "Informe auditor(1 si)",
+	  balance.b_sindi AS "Informe del síndico(1 si)",
+	  balance.b_nroasoc AS "Asociados",  
+	  balance.b_capsus AS "Capital suscripto", 
+	  balance.b_capreal AS "Capital Real",
+	  balance.b_resleg AS "Reserva legal",
+	  balance.b_resesp AS "Reserva especial",
+	  balance.b_saldoact AS "Saldo por actualización contable",
+	  balance.b_monto AS "Monto operativo",
+	  balance.b_resultado AS "Resultado del ejercicio",
+	  balance.b_fondo1 AS "Fondo educación y capacitación",
+	  balance.b_fondo2 AS "Fondo asistencia"
+	FROM 
+	  coop, 
+	  localidad,
+	  actividad, 
+	  maedoc as documento,
+	  balance
+	WHERE
+	/*-- Union de tablas*/
+	  documento.md_codbal = balance.b_id                   AND
+|3,0,0,0,50,0,1574340305,"-- Consulta de cooperativas","","USE mprod_cooperati;","","-- Listado de cooperativas sólo de crédito","","SELECT ","/*--Datos de actividad*/","  actividad.a_descripcion,","/*--Datos de cooperativa*/","  coop.co_matricula AS matriculaProvincial,","  coop.co_mat_nac AS matriculaNacional,","  coop.co_nombre AS nombre,","  coop.co_cuit AS cuit,","  coop.co_ingresosBrutos AS ingresosBrutos,","  coop.co_domi AS domicilio,",>27
+|<"  coop.co_email AS email,","  coop.co_tel AS telefono,","  localidad.l_nom_dpto AS departamento,","  localidad.l_nom_loc AS localidad,","/*--Datos del documento*/","  documento.md_ejercicio AS ejercicio,","/*--Datos del balance  */","  balance.b_id AS identificador, ","  balance.b_certif AS \"Certificado(1 si)\",","  balance.b_regul AS \"Regular(1 si)\",","  balance.b_resul AS \"Estado de resultado(1 si)\",","  balance.b_anexo AS \"Cuadros anexos(1 si)\",",>54
+|<"  balance.b_sindi AS \"Informe del Síndico(1 si)\",","  balance.b_audi AS \"Informe auditor(1 si)\",","  balance.b_sindi AS \"Informe del síndico(1 si)\",","  balance.b_nroasoc AS \"Asociados\",  ","  balance.b_capsus AS \"Capital suscripto\", ","  balance.b_capreal AS \"Capital Real\",","  balance.b_resleg AS \"Reserva legal\",","  balance.b_resesp AS \"Reserva especial\",","  balance.b_saldoact AS \"Saldo por actualización contable\",","  balance.b_monto AS \"Monto operativo\",",>55
+|<"  balance.b_resultado AS \"Resultado del ejercicio\",","  balance.b_fondo1 AS \"Fondo educación y capacitación\",","  balance.b_fondo2 AS \"Fondo asistencia\"","FROM ","  coop, ","  localidad,","  actividad, ","  maedoc as documento,","  balance","WHERE","/*-- Union de tablas*/","  documento.md_codbal = balance.b_id                   AND"
+"1	LINE	0
+	  coop.co_ingresosBrutos AS ingresosBrutos,
+|3,0,1,1,1,0,1574340543,"  coop.co_ingresosBrutos AS ingresosBrutos,"
+"2	LINE	0
+	USE mprod_cooperati;
+|3,0,2,1,1,0,1574334697,"USE mprod_cooperati;"
+"3	LINE	0
+	USE mprod_cooperati;
+|3,0,3,1,1,0,1574334574,"USE mprod_cooperati;"
+"4	LINE	0
+	
+|3,0,4,1,1,0,1574334161,""
+"5	LINE	0
+	
+|3,0,5,1,1,0,1574334160,""
+"6	LINE	0
+	
+|3,0,6,1,1,0,1574334160,""
+"7	LINE	0
+	
+|3,0,7,1,1,0,1574334160,""
+"8	LINE	0
+	
+|3,0,8,1,1,0,1574334160,""
+"9	LINE	0
+	
+|3,0,9,1,1,0,1574334160,""
+""-	CHAR	0
+	/
+|3,1,36,0,1,0,1574352651,"/"
+
+# Marcas en el archivo:
+'0  34  7  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,48,34,7,1574352760,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+'1  38  50  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,49,38,50,1574352756,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+'2  46  0  ~/docker/apache5/Dockerfile
+|4,50,46,0,1574337180,"~/docker/apache5/Dockerfile"
+'3  1  0  ~/tareas
+|4,51,1,0,1574334926,"~/tareas"
+'4  1  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,52,1,0,1574334544,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+'5  69  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,53,69,0,1574334544,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+'6  1  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,54,1,0,1574334544,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+'7  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,55,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+'8  4  0  ~/.vimrc
+|4,56,4,0,1574334254,"~/.vimrc"
+'9  37  0  ~/.vimrc
+|4,57,37,0,1574333715,"~/.vimrc"
+
+# Lista de saltos (el más reciente va primero):
+-'  34  7  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,34,7,1574352760,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  38  50  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,38,50,1574352756,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  57  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,57,0,1574351508,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  43  14  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,43,14,1574351474,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  9  53  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,9,53,1574348964,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,1,0,1574348861,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  187  122  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,187,122,1574340277,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  69  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,69,0,1574337201,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  46  0  ~/docker/apache5/Dockerfile
+|4,39,46,0,1574337180,"~/docker/apache5/Dockerfile"
+-'  46  0  ~/docker/apache5/Dockerfile
+|4,39,46,0,1574337180,"~/docker/apache5/Dockerfile"
+-'  1  0  ~/docker/apache5/Dockerfile
+|4,39,1,0,1574336259,"~/docker/apache5/Dockerfile"
+-'  1  0  ~/docker/apache5/Dockerfile
+|4,39,1,0,1574336259,"~/docker/apache5/Dockerfile"
+-'  1  0  ~/tareas
+|4,39,1,0,1574334926,"~/tareas"
+-'  1  0  ~/tareas
+|4,39,1,0,1574334926,"~/tareas"
+-'  1  0  ~/tareas
+|4,39,1,0,1574334926,"~/tareas"
+-'  1  0  ~/tareas
+|4,39,1,0,1574334926,"~/tareas"
+-'  2  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,2,0,1574334694,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  5  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,5,0,1574334693,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  6  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,6,0,1574334692,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,1,0,1574334559,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,1,0,1574334544,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,1,0,1574334544,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,1,0,1574334544,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,1,0,1574334544,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,1,0,1574334544,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,1,0,1574334544,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,1,0,1574334544,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+|4,39,1,0,1574334544,"~/Documentos/Mutual/entregas/entrega02/consulta.sql"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  1  0  ~/Documentos/Mutual/entregas/entrega02/requerimiento
+|4,39,1,0,1574334343,"~/Documentos/Mutual/entregas/entrega02/requerimiento"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1574334254,"~/.vimrc"
+
+# Historia de las marcas en los archivos (de la más reciente a la más antigua):
+
+> ~/docker/apache5/Dockerfile
+	*	1574337179	0
+	"	46	0
+
+> ~/Documentos/Mutual/entregas/entrega02/consulta.sql
+	*	1574336094	0
+	"	34	7
+	^	5	29
+	.	34	2
+	+	26	13
+	+	27	22
+	+	28	0
+	+	24	1
+	+	25	1
+	+	26	1
+	+	31	42
+	+	31	141
+	+	34	1
+	+	31	40
+	+	31	140
+	+	34	0
+	+	31	0
+	+	36	26
+	+	44	0
+	+	17	50
+	+	15	37
+	+	18	17
+	+	37	53
+	+	36	28
+	+	11	0
+	+	12	0
+	+	13	1
+	+	24	0
+	+	32	44
+	+	39	112
+	+	39	105
+	+	44	0
+	+	42	35
+	+	2	26
+	+	2	47
+	+	2	48
+	+	2	55
+	+	42	22
+	+	43	0
+	+	13	0
+	+	33	0
+	+	33	100
+	+	34	0
+	+	33	0
+	+	34	47
+	+	25	0
+	+	13	72
+	+	43	15
+	+	9	0
+	+	26	0
+	+	34	38
+	+	41	25
+	+	34	0
+	+	38	0
+	+	37	57
+	+	38	44
+	+	38	47
+	+	38	48
+	+	38	0
+	+	39	36
+	+	44	0
+	+	8	19
+	+	10	21
+	+	14	20
+	+	16	18
+	+	30	7
+	+	35	2
+	+	30	17
+	+	35	13
+	+	36	59
+	+	37	87
+	+	38	117
+	+	39	105
+	+	39	0
+	+	39	105
+	+	8	21
+	+	10	25
+	+	14	24
+	+	16	1
+	+	8	3
+	+	30	21
+	+	35	18
+	+	36	100
+	+	37	89
+	+	38	119
+	+	39	107
+	+	36	62
+	+	37	62
+	+	38	62
+	+	39	62
+	+	18	141
+	+	19	129
+	+	20	116
+	+	21	138
+	+	22	145
+	+	6	0
+	+	5	0
+	+	6	0
+	+	3	0
+	+	4	0
+	+	47	0
+	+	46	0
+	+	5	28
+	+	34	2
+
+> /usr/share/vim/vim80/doc/ft_sql.txt
+	*	1574335640	0
+	"	504	0
+
+> ~/tareas
+	*	1574334925	0
+	"	1	0
+	^	63	0
+	.	62	0
+	+	41	0
+	+	42	0
+	+	38	0
+	+	44	0
+	+	42	28
+	+	43	0
+	+	48	21
+	+	48	0
+	+	48	24
+	+	45	0
+	+	48	23
+	+	57	9
+	+	49	73
+	+	49	58
+	+	49	52
+	+	50	56
+	+	49	76
+	+	49	30
+	+	53	38
+	+	56	1
+	+	48	0
+	+	49	30
+	+	53	39
+	+	54	0
+	+	50	99
+	+	33	0
+	+	53	53
+	+	33	3
+	+	1	0
+	+	33	0
+	+	1	28
+	+	1	62
+	+	1	3
+	+	1	30
+	+	1	1
+	+	1	0
+	+	33	0
+	+	1	0
+	+	33	0
+	+	1	2
+	+	1	1
+	+	33	0
+	+	33	78
+	+	33	24
+	+	33	0
+	+	1	55
+	+	1	2
+	+	1	78
+	+	92	77
+	+	1	40
+	+	2	42
+	+	33	103
+	+	33	0
+	+	33	78
+	+	33	36
+	+	33	76
+	+	33	28
+	+	33	65
+	+	33	0
+	+	29	0
+	+	3	0
+	+	33	0
+	+	33	22
+	+	3	1
+	+	33	0
+	+	26	0
+	+	33	22
+	+	33	101
+	+	33	0
+	+	29	0
+	+	27	0
+	+	35	0
+	+	29	0
+	+	31	37
+	+	33	0
+	+	31	0
+	+	33	6
+	+	33	85
+	+	35	7
+	+	35	115
+	+	36	0
+	+	34	0
+	+	44	77
+	+	50	48
+	+	44	26
+	+	33	96
+	+	23	70
+	+	50	59
+	+	49	32
+	+	51	1
+	+	53	0
+	+	57	0
+	+	51	0
+	+	50	48
+	+	47	2
+	+	46	22
+	+	47	32
+	+	58	132
+	+	61	0
+	+	62	0
+
+> ~/.vim/bundle/NERD_tree_1
+	*	1574334780	0
+	"	11	0
+	.	1	0
+	+	1	0
+
+> ~/Documentos/Mutual/entregas/entrega02/requerimiento
+	*	1574334339	0
+	"	1	0
+	^	6	44
+	.	6	43
+	+	4	96
+	+	3	91
+	+	5	168
+	+	5	0
+	+	6	116
+	+	6	20
+	+	3	122
+	+	5	0
+	+	3	122
+	+	6	88
+	+	7	0
+	+	6	172
+	+	4	25
+	+	6	43
+
+> ~/.vimrc
+	*	1574334253	0
+	"	4	0
+	.	4	0
+	+	51	0
+	+	51	1
+	+	51	0
+	+	13	0
+	+	14	0
+	+	13	19
+	+	14	17
+	+	13	19
+	+	12	0
+	+	13	0
+	+	14	0
+	+	55	16
+	+	2	0
+	+	7	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	27	0
+	+	28	0
+	+	29	0
+	+	30	0
+	+	31	0
+	+	32	0
+	+	33	0
+	+	34	0
+	+	35	0
+	+	36	0
+	+	38	0
+	+	39	0
+	+	40	0
+	+	41	0
+	+	42	0
+	+	43	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	47	0
+	+	48	0
+	+	49	0
+	+	50	0
+	+	51	0
+	+	52	0
+	+	53	0
+	+	54	0
+	+	55	0
+	+	56	0
+	+	2	0
+	+	7	0
+	+	39	0
+	+	40	0
+	+	41	0
+	+	42	0
+	+	43	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	37	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	3	0
+	+	5	0
+	+	4	0
+
+> ~/Documentos/Mutual/migracion/migracion
+	*	1574333444	0
+	"	5	0
+	^	23	27
+	.	5	0
+	+	8	21
+	+	7	48
+	+	13	26
+	+	14	31
+	+	1	0
+	+	16	30
+	+	21	45
+	+	15	0
+	+	20	0
+	+	16	20
+	+	19	0
+	+	17	0
+	+	11	0
+	+	1	0
+	+	17	23
+	+	17	0
+	+	6	0
+	+	7	0
+	+	6	0
+	+	4	0
+	+	6	0
+	+	1	23
+	+	4	0
+	+	4	314
+	+	4	0
+	+	1	0
+	+	4	0
+	+	7	0
+	+	12	0
+	+	4	37
+	+	8	0
+	+	10	53
+	+	25	217
+	+	23	11
+	+	30	5
+	+	23	26
+	+	4	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	4	0
+	+	6	0
+	+	30	0
+	+	4	0
+	+	1	0
+	+	4	0
+	+	1	0
+	+	2	0
+	+	4	0
+	+	3	0
+	+	4	0
+	+	3	0
+	+	5	0
+
+> ~/docker/env.example
+	*	1574259403	0
+	"	1	0
+
+> ~/Documentos/Mutual/migracion/configProd.php
+	*	1574176106	0
+	"	96	0
+	^	49	43
+	.	50	38
+	+	37	55
+	+	37	54
+	+	70	3
+	+	37	0
+	+	71	4
+	+	34	0
+	+	71	0
+	+	1	0
+	+	42	26
+	+	49	31
+	+	51	31
+	+	53	32
+	+	57	31
+	+	58	31
+	+	59	31
+	+	49	42
+	+	50	38
+
+> ~/Documentos/Mutual/servidores/produccion/datosDbProduccion
+	*	1574176065	0
+	"	2	0
+	^	4	46
+	.	4	46
+	+	8	108
+	+	3	59
+	+	4	46
+
+> /usr/share/vim/vim80/doc/syntax.txt
+	*	1574172222	0
+	"	462	7
+
+> ~/.vim/colors/autumn.vim
+	*	1574171589	0
+	"	1	0
+
+> ~/.config/ranger/rc.conf
+	*	1574160632	0
+	"	615	22
+	^	615	23
+	.	615	22
+	+	615	22
+
+> ~/.Xresources
+	*	1574158541	0
+	"	4	17
+	^	4	18
+	.	4	17
+	+	4	17
+
+> /etc/X11/app-defaults/XTerm
+	*	1574158383	0
+	"	267	0
+	.	267	0
+	+	267	0
+
+> ~/Descargas/archivo nuevo1.lyx
+	*	1573744282	0
+	"	12	0
+
+> ~/Documentos/Mutual/20191023-estado
+	*	1573728815	0
+	"	22	0
+
+> ~/Documentos/Mutual/migracion/mprod_mutual.sql
+	*	1573727205	0
+	"	1	16
+	^	1	17
+	.	1	16
+	+	2	0
+	+	1	16
+
+> ~/.config/ranger/commands.py
+	*	1573727015	0
+	"	63	0
+	^	95	96
+	.	64	0
+	+	63	30
+	+	64	96
+	+	65	0
+	+	95	95
+	+	64	0
+
+> ~/public_html/error.php
+	*	1573652535	0
+	"	2	22
+	^	2	23
+	.	2	22
+	+	1	6
+	+	4	2
+	+	2	22
+
+> ~/docker/logs/apache2"/error.log
+	*	1573649475	0
+	"	1	0
+
+> ~/docker/logs/apache2"/access.log
+	*	1573649452	0
+	"	42130	0
+
+> ~/docker/docker-compose.yml
+	*	1573647318	0
+	"	35	25
+
+> ~/docker/apache/Dockerfile
+	*	1573647276	0
+	"	69	14
+
+> ~/Documentos/Mutual/desarrollo/addGego.sql
+	*	1573642393	0
+	"	43	0
+	.	43	0
+	+	4	21
+	+	1	16
+	+	4	15
+	+	8	103
+	+	4	21
+	+	5	20
+	+	4	96
+	+	5	20
+	+	6	21
+	+	5	97
+	+	6	21
+	+	5	20
+	+	6	20
+	+	6	105
+	+	7	20
+	+	7	101
+	+	8	21
+	+	8	101
+	+	2	0
+	+	3	27
+	+	12	0
+	+	11	65
+	+	10	32
+	+	12	0
+	+	14	59
+	+	12	0
+	+	13	32
+	+	9	0
+	+	12	0
+	+	14	0
+	+	16	0
+	+	17	14
+	+	18	14
+	+	19	14
+	+	20	14
+	+	21	14
+	+	24	0
+	+	28	108
+	+	28	0
+	+	24	24
+	+	28	2
+	+	25	24
+	+	28	0
+	+	24	17
+	+	25	17
+	+	28	14
+	+	29	14
+	+	4	26
+	+	36	25
+	+	37	0
+	+	41	0
+	+	40	61
+	+	43	61
+	+	43	0
+
+> ~/public_html/MProdTweb/.gitignore
+	*	1573565226	0
+	"	22	0
+	^	22	1
+	.	22	0
+	+	20	6
+	+	1	3
+	+	21	12
+	+	22	0
+
+> /usr/share/vim/vim80/doc/options.txt
+	*	1573554222	0
+	"	5756	22
+
+> ~/Documentos/Mutual/20191111-estado
+	*	1573474811	0
+	"	115	0
+	^	115	0
+	.	114	0
+	+	1	0
+	+	2	0
+	+	10	62
+	+	39	0
+	+	62	1
+	+	114	0
+
+> /etc/resolv.conf
+	*	1573217765	0
+	"	7	17
+	^	7	15
+	.	7	17
+	+	6	0
+	+	7	0
+	+	6	1
+	+	7	0
+	+	6	1
+	+	7	17
+
+> ~/.docker/config.yml
+	*	1573216797	0
+	"	7	28
+	^	7	29
+	.	7	28
+	+	11	0
+	+	6	38
+	+	7	28
+
+> .docker/config.yml
+	*	1573216718	0
+	"	11	0
+	^	11	1
+	.	11	0
+	+	11	0
+
+> ~/vim .docker/config.json
+	*	1573216506	0
+	"	8	5
+	^	7	37
+	.	7	35
+	+	11	0
+	+	6	38
+	+	7	35
+
+> ~/.xsession-errors
+	*	1572882704	0
+	"	1	0
+
+> ~/public_html/adminer.php
+	*	1572870509	0
+	"	861	0
+
+> ~/public_html/info.php
+	*	1572870444	0
+	"	1	0
+
+> /etc/environment
+	*	1572862838	0
+	"	1	3
+
+> ~/.bashrc
+	*	1572862619	0
+	"	117	0
+
+> /etc/apt/apt.conf
+	*	1572617362	0
+	"	1	0
+
+> ~/public_html/v00_stg/mutu/mprovincial.php
+	*	1572355990	0
+	"	273	52
+
+> ~/Documentos/Mutual/desarrollo/ControlP
+	*	1572265345	0
+	"	4	0
+	.	2	0
+	+	2	0
+
+> ~/Documentos/Ecosocial/DB/mprod_cooperati.sql
+	*	1572001027	0
+	"	23	0
+
+> ~/public_html/adminer2.php
+	*	1571924774	0
+	"	33	1
+	^	32	9
+	.	12	0
+	+	33	1
+	+	19	31
+	+	13	9
+	+	14	9
+	+	15	9
+	+	16	9
+	+	17	9
+	+	18	9
+	+	32	9
+	+	18	8
+	+	17	8
+	+	16	8
+	+	15	8
+	+	14	8
+	+	13	8
+	+	12	0
+
+> ~/docker/docker-compose.sh
+	*	1571923052	0
+	"	1	0
+
+> ~/20191023-estado
+	*	1571829769	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	2	0
+	+	1	0
+
+> ~/Documentos/Mutual/entregas/entrega01/cambios.sql
+	*	1571666326	0
+	"	5	0
+	^	5	0
+	.	5	0
+	+	3	129
+	+	3	0
+	+	1	17
+	+	4	0
+	+	5	0
+	+	4	131
+	+	5	0
+
+> ~/Documentos/Mutual/entregas/entrega01/ControlP
+	*	1571666055	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/a.txt
+	*	1571136126	0
+	"	7	0
+	^	1	1
+	.	7	0
+	+	1	1
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+
+> ~/b.txt
+	*	1571135912	0
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	0
+
+> ~/public_html/MProd/.gitignore
+	*	1570539920	0
+	"	7	0
+
+> ~/Documentos/Ecosocial/consulta.sql
+	*	1570193544	0
+	"	7	19
+	^	7	20
+	.	7	20
+	+	4	2
+	+	2	64
+	+	7	6
+	+	6	26
+	+	7	20
+
+> ~/NERD_tree_1
+	*	1570188913	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Documentos/NexoEmpresa/mprod_nexoempresa.sql
+	*	1570124379	0
+	"	3	0
+
+> ~/.vim/bundle/vim-fugitive/README.markdown
+	*	1570118846	0
+	"	90	0
+
+> ~/public_html/v00_stg/mutu/NERD_tree_1
+	*	1570118664	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/public_html/v00_stg/mutu/NERD_tree_2
+	*	1570118598	0
+	"	1	1
+	.	1	0
+	+	1	0
+
+> ~/public_html/v00_stg/mutu/cabecera.php
+	*	1570118435	0
+	"	1	0
+
+> ~/public_html/v00_stg/mutu/buscoCoop.php
+	*	1570118296	0
+	"	1	0
+
+> ~/public_html/nexoempresa/.git/MERGE_MSG
+	*	1570101438	0
+	"	2	0
+	^	2	35
+	.	2	34
+	+	2	34
+
+> ~/public_html/nexoempresa/tareas
+	*	1570011836	0
+	"	1	0
+
+> ~/Documentos/NexoEmpresa/dbPrueba/empresa.sql
+	*	1569948694	0
+	"	2	1
+	^	9	0
+	.	2	1
+	+	8	22
+	+	3	0
+	+	1	23
+	+	2	1
+
+> ~/Documentos/NexoEmpresa/dbPrueba/migrate.sql
+	*	1569942490	0
+	"	1	0
+
+> ~/Descargas/cg/practica_rasterizacion_rene-20190920T155417Z-001/practica_rasterizacion_rene/rasterizacion_v2/src/main.cpp
+	*	1568994881	0
+	"	349	0
+
+> ~/__Tagbar__.1
+	*	1568994854	0
+	"	9	4
+	.	41	0
+	+	65	0
+	+	41	0
+
+> ~/Documentos/NexoEmpresa/dbPrueba/NERD_tree_1
+	*	1568987110	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/Documentos/NexoEmpresa/dbPrueba/empresaMigration.sql
+	*	1568987109	0
+	"	25	0
+	.	19	0
+	+	19	0
+
+> ~/Documentos/NexoEmpresa/dbPrueba/mprod_nexoempresa.sql
+	*	1568982525	0
+	"	61	0
+
+> ~/public_html/nexoempresa/NERD_tree_1
+	*	1568982390	0
+	"	12	0
+	.	1	0
+	+	1	0
+
+> ~/public_html/nexoempresa/bower.json
+	*	1568982387	0
+	"	4	2
+	^	4	5
+	.	6	0
+	+	6	0
+
+> ~/public_html/nexoempresa/src/MProdNexoEmpresaBundle/Controller/ActividadController.php
+	*	1568982204	0
+	"	10	0
+	^	5	42
+	.	10	0
+	+	4	0
+	+	10	0
+
+> ~/public_html/nexoempresa/__Tagbar__.1
+	*	1568981819	0
+	"	16	4
+	.	25	0
+	+	156	0
+	+	134	0
+	+	91	0
+	+	48	0
+	+	25	0
+
+> ~/Documentos/NexoEmpresa/dbPrueba/Dump20190919-1.sql
+	*	1568981418	0
+	"	63	0
+	.	19	0
+	+	19	0
+
+> ~/public_html/nexoempresa/src/MProdNexoEmpresaBundle/Controller/RegistrationController.php
+	*	1568894491	0
+	"	206	0
+
+> ~/t
+	*	1568890416	0
+	"	1	0
+
+> ~/public_html/ecosocial/actividad.php
+	*	1568890164	0
+	"	203	13
+
+> ~/public_html/ecosocial/__Tagbar__.1
+	*	1568890152	0
+	"	6	4
+	.	60	0
+	+	60	0
+
+> ~/public_html/ecosocial/NERD_tree_1
+	*	1568890132	0
+	"	17	0
+	.	1	0
+	+	1	0
+
+> ~/public_html/nexoempresa/src/MProdNexoEmpresaBundle/Entity/Actividad.php
+	*	1568890123	0
+	"	45	0
+
+> ~/public_html/nexoempresa/src/MProdNexoEmpresaBundle/Controller/CatalogoController.php
+	*	1568890027	0
+	"	2	0
+
+> ~/Documentos/Ecosocial/Desarrollo/v07_stg/ecosocial/NERD_tree_1
+	*	1568814608	0
+	"	15	0
+	.	1	0
+	+	1	0
+
+> ~/Documentos/Ecosocial/Desarrollo/v07_stg/ecosocial/actividad.php
+	*	1568814607	0
+	"	27	0
+
+> ~/Documentos/Ecosocial/entrega22/script.sql
+	*	1568809232	0
+	"	4	129
+	^	4	31
+	.	3	27
+	+	2	191
+	+	2	35
+	+	3	27
+
+> ~/public_html/nexoempresa/app/AppKernel.php
+	*	1568723030	0
+	"	1	0
+
+> ~/public_html/nexoempresa/app/AppCache.php
+	*	1568722969	0
+	"	4	0
+
+> ~/public_html/MProd/app/AppKernel.php
+	*	1568722935	0
+	"	22	0
+
+> ~/public_html/v00_stg/mutu/localidad.php
+	*	1568115802	0
+	"	24	1
+	.	24	1
+	+	24	1
+
+> ~/vim/autoload/pathogen.vim
+	*	1568113796	0
+	"	35	31
+	^	265	0
+	.	264	152
+	+	264	152
+
+> ~/vim/0
+	*	1568113683	0
+	"	1	0
+
+> ~/vimrc
+	*	1568113390	0
+	"	1	0
+
+> ~/.vinfo
+	*	1568111383	0
+	"	1	0
